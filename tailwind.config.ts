@@ -8,9 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      scrollBehavior:['smooth'],
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#0a0a0a",
+        foreground: "#ededed",
+        primary: "#f5e6d3",
+        secondary: "#8b4513"
       },
     },
   },
