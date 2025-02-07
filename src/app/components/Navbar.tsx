@@ -4,6 +4,7 @@ import { faFeatherPointed, faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { scrollToSection } from "../utils/navigation";
+const FRONTEND_APP_PATH = process.env.FRONTEND_APP_BASE_URL;
 
 export default function Navbar() {
   const [toggleMenu, setTogglemenu] = useState(false);
@@ -68,18 +69,20 @@ export default function Navbar() {
         />
 
         <div className="hidden lg:flex flex-row gap-4 p-4">
-          <button
+          <a
+            href={`${FRONTEND_APP_PATH}/auth/login`}
             id="sign-in-button"
             className="bg-primary text-secondary py-2 px-6 rounded hover:bg-secondary hover:text-white cursor-pointer text-center border border-secondary whitespace-nowrap transition duration-300"
           >
             Sign In
-          </button>
-          <button
+          </a>
+          <a
+            href={`${FRONTEND_APP_PATH}/auth/register`}
             id="register-button"
             className="bg-secondary text-white py-2 px-6 rounded hover:bg-[#6a3514] cursor-pointer text-center whitespace-nowrap min-w-[120px] flex-shrink-0 transition duration-300"
           >
             Register
-          </button>
+          </a>
         </div>
       </nav>
       {/* Toggle Menu */}
