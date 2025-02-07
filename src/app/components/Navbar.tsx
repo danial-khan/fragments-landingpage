@@ -92,32 +92,46 @@ export default function Navbar() {
           aria-hidden="true"
         >
           <ul className="flex flex-col text-white bg-secondary gap-4 font-semibold p-4 w-full text-center">
-            <li className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary">
+            <li
+              className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary"
+              onClick={() => navigate("/")}
+            >
               Home
             </li>
-            <li className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary">
+            <li
+              className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary"
+              onClick={() => scrollToSection("explore", router)}
+            >
               Explore
             </li>
-            <li className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary">
+            <li
+              className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary"
+              onClick={() => scrollToSection("/about", router)}
+            >
               About
             </li>
-            <li className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary">
+            <li
+              className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary"
+              onClick={() => scrollToSection("contact", router)}
+            >
               Contact
             </li>
           </ul>
           <div className="sm:flex flex-col gap-4 p-4 bg-secondary justify-items-center">
-            <button
+            <a
+              href={`${FRONTEND_APP_PATH}/auth/login`}
               id="sign-in-button"
               className="bg-secondary text-primary py-2 px-4 rounded hover:bg-[#6a3514] hover:text-white cursor-pointer text-center border border-primary whitespace-nowrap w-full"
             >
               Sign In
-            </button>
-            <button
+            </a>
+            <a
+              href={`${FRONTEND_APP_PATH}/auth/register`}
               id="register-button"
               className="bg-secondary text-white py-2 px-4 rounded hover:bg-[#6a3514] cursor-pointer text-center border border-primary w-full"
             >
               Register
-            </button>
+            </a>
           </div>
         </div>
       )}
