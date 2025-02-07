@@ -10,9 +10,14 @@ import {
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Navbar from "./components/Navbar";
+import Link from "next/link";
+import { scrollToSection } from "./utils/navigation";
+import { useRouter } from "next/navigation";
+const FRONTEND_APP_PATH = process.env.NEXT_PUBLIC_FRONTEND_APP_BASE_URL;
 
 config.autoAddCss = false;
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="font-sans scroll-smooth">
       <Navbar />
@@ -32,10 +37,10 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-start gap-4">
-            <button className="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-[#6a3514] hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300">
+            <Link href={`${FRONTEND_APP_PATH}/auth/register`} className="bg-secondary text-center text-white px-6 py-2 rounded-lg hover:bg-[#6a3514] hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300">
               Get Started
-            </button>
-            <button className="bg-primary text-secondary px-6 py-2 rounded-lg transition border-2 border-secondary hover:bg-secondary hover:text-white w-full sm:w-auto cursor-pointer">
+            </Link>
+            <button onClick={(() => scrollToSection("explore", router))} className="bg-primary text-secondary px-6 py-2 rounded-lg transition border-2 border-secondary hover:bg-secondary hover:text-white w-full sm:w-auto cursor-pointer">
               Learn More
             </button>
           </div>

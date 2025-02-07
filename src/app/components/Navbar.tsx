@@ -117,18 +117,18 @@ export default function Navbar() {
               Contact
             </li>
           </ul>
-          <div className="sm:flex flex-col gap-4 p-4 bg-secondary justify-items-center">
+          <div className="bg-secondary py-5 w-full">
             <a
               href={`${FRONTEND_APP_PATH}/auth/login`}
               id="sign-in-button"
-              className="bg-secondary text-primary py-2 px-4 rounded hover:bg-[#6a3514] hover:text-white cursor-pointer text-center border border-primary whitespace-nowrap w-full"
+              className="bg-secondary block mx-2 text-primary py-2 px-4 rounded hover:bg-[#6a3514] hover:text-white cursor-pointer text-center border border-primary whitespace-nowrap"
             >
               Sign In
             </a>
             <a
               href={`${FRONTEND_APP_PATH}/auth/register`}
               id="register-button"
-              className="bg-secondary text-white py-2 px-4 rounded hover:bg-[#6a3514] cursor-pointer text-center border border-primary w-full"
+              className="bg-secondary block text-white py-2 px-4 rounded hover:bg-[#6a3514] cursor-pointer text-center border border-primary mx-2 mt-4"
             >
               Register
             </a>
