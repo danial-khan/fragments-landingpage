@@ -6,7 +6,6 @@ import {
   faComments,
   faScaleBalanced,
   faBook,
-  faCogs,
   faUsers,
   faLock,
   faCertificate,
