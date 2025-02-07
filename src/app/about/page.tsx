@@ -11,6 +11,7 @@ import {
   faCertificate,
   faCog,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 export default function About() {
   return (
     <>
@@ -22,16 +23,16 @@ export default function About() {
         >
           <ul className="flex flex-col text-secondary gap-4 font-semibold p-4">
             <li className="hover:text-primary cursor-pointer">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className="hover:text-primary cursor-pointer">
-              <a href="explore.html">Explore</a>
+              <Link href="explore.html">Explore</Link>
             </li>
             <li className="hover:text-primary cursor-pointer">
-              <a href="about.html">About</a>
+              <Link href="about.html">About</Link>
             </li>
             <li className="hover:text-primary cursor-pointer">
-              <a href="contact.html">Contact</a>
+              <Link href="contact.html">Contact</Link>
             </li>
           </ul>
           <div className="flex flex-col gap-4 p-4">
@@ -39,13 +40,13 @@ export default function About() {
               id="sign-in-button"
               className="bg-white text-secondary py-2 px-4 rounded hover:bg-secondary hover:text-white cursor-pointer text-center border border-secondary"
             >
-              <a href="login.html">Sign In</a>
+              <Link href="login.html">Sign In</Link>
             </button>
             <button
               id="register-button"
               className="bg-secondary text-white py-2 px-4 rounded hover:bg-[#6a3514] cursor-pointer text-center"
             >
-              <a href="login.html">Register</a>
+              <Link href="login.html">Register</Link>
             </button>
           </div>
         </div>
@@ -265,24 +266,24 @@ export default function About() {
               <h4 className="text-xl font-semibold mb-4">Quick Link</h4>
               <ul>
                 <li>
-                  <a href="#" className="text-white hover:text-primary">
+                  <Link href="#" className="text-white hover:text-primary">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-primary">
+                  <Link href="#" className="text-white hover:text-primary">
                     Features
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-primary">
+                  <Link href="#" className="text-white hover:text-primary">
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-primary">
+                  <Link href="#" className="text-white hover:text-primary">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -291,19 +292,19 @@ export default function About() {
               <h4 className="text-xl font-semibold mb-4">Legal</h4>
               <ul>
                 <li>
-                  <a href="#" className="text-white hover:text-primary">
+                  <Link href="#" className="text-white hover:text-primary">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-primary">
+                  <Link href="#" className="text-white hover:text-primary">
                     Terms of Service
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-primary">
+                  <Link href="#" className="text-white hover:text-primary">
                     Cookie Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -311,18 +312,18 @@ export default function About() {
             <div>
               <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
               <div className="flex gap-4 mb-4">
-                <a href="#" className="text-white hover:text-secondary">
+                <Link href="#" className="text-white hover:text-secondary">
                   <i className="fab fa-twitter w-6 h-6"></i>
-                </a>
-                <a href="#" className="text-white hover:text-secondary">
+                </Link>
+                <Link href="#" className="text-white hover:text-secondary">
                   <i className="fab fa-facebook-f w-6 h-6"></i>
-                </a>
-                <a href="#" className="text-white hover:text-secondary">
+                </Link>
+                <Link href="#" className="text-white hover:text-secondary">
                   <i className="fab fa-linkedin-in w-6 h-6"></i>
-                </a>
-                <a href="#" className="text-white hover:text-secondary">
+                </Link>
+                <Link href="#" className="text-white hover:text-secondary">
                   <i className="fab fa-instagram w-6 h-6"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
