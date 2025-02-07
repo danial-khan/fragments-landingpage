@@ -1,25 +1,18 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFeatherPointed,
   faUsers,
   faCogs,
   faProjectDiagram,
   faBook,
   faCalculator,
-  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Navbar from "./components/Navbar";
-import { scrollToSection } from "./utils/navigation";
 
 config.autoAddCss = false;
 export default function Home() {
-  const [toggleMenu, setTogglemenu] = useState(false);
-
   return (
     <div className="font-sans scroll-smooth">
       <Navbar />
