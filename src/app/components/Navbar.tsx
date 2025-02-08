@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { scrollToSection } from "../utils/navigation";
 const FRONTEND_APP_PATH = process.env.NEXT_PUBLIC_FRONTEND_APP_BASE_URL;
-
+//.
 export default function Navbar() {
   const [toggleMenu, setTogglemenu] = useState(false);
   const router = useRouter();
