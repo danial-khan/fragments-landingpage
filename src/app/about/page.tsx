@@ -12,6 +12,7 @@ import {
   faCog,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { faFacebook, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 export default function About() {
   return (
     <>
@@ -51,10 +52,8 @@ export default function About() {
           </div>
         </div>
 
-        <section className="relative w-full h-96 p-10 md:p-20">
+        <section className="relative w-full h-96 p-10 md:p-20 bg-primary shadow-lg">
           <div className="absolute inset-0 bg-cover bg-center"></div>
-
-          <div className="absolute inset-0 bg-white opacity-70"></div>
 
           <div className="relative flex items-center w-full h-full">
             <div className="max-w-2xl">
@@ -169,7 +168,7 @@ export default function About() {
 
               <div className="bg-white shadow-lg rounded-lg p-4 flex gap-3 border border-secondary">
                 <div>
-                  <FontAwesomeIcon icon={faLock} className="text-3xl"/>
+                  <FontAwesomeIcon icon={faLock} className="text-3xl" />
                 </div>
                 <div className="text-start">
                   <h3 className="text-xl md:text-lg font-semibold">
@@ -183,7 +182,7 @@ export default function About() {
 
               <div className="bg-white shadow-lg rounded-lg p-4 flex gap-3 border border-secondary">
                 <div>
-                  <FontAwesomeIcon icon={faCertificate} className="text-3xl"/>
+                  <FontAwesomeIcon icon={faCertificate} className="text-3xl" />
                 </div>
                 <div className="text-start">
                   <h3 className="text-xl md:text-lg font-semibold">
@@ -312,18 +311,35 @@ export default function About() {
             <div>
               <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
               <div className="flex gap-4 mb-4">
-                <Link href="#" className="text-white hover:text-secondary">
-                  <i className="fab fa-twitter w-6 h-6"></i>
-                </Link>
-                <Link href="#" className="text-white hover:text-secondary">
-                  <i className="fab fa-facebook-f w-6 h-6"></i>
-                </Link>
-                <Link href="#" className="text-white hover:text-secondary">
-                  <i className="fab fa-linkedin-in w-6 h-6"></i>
-                </Link>
-                <Link href="#" className="text-white hover:text-secondary">
-                  <i className="fab fa-instagram w-6 h-6"></i>
-                </Link>
+                <ul>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-white hover:text-primary flex items-center gap-2 "
+                    >
+                      <FontAwesomeIcon icon={faTwitter} className="h-4 w-4" />
+                      <span>fragments@twitter.com</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-white hover:text-primary flex items-center gap-2 "
+                    >
+                      <FontAwesomeIcon icon={faFacebook} className="h-4 w-4" />
+                      <span>fragments@facebook.com</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-white hover:text-primary flex items-center gap-2 "
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4" />
+                      <span>fragments@linkedIn.com</span>
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

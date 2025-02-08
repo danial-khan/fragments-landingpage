@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { scrollToSection } from "../utils/navigation";
 const FRONTEND_APP_PATH = process.env.NEXT_PUBLIC_FRONTEND_APP_BASE_URL;
-//.
+
 export default function Navbar() {
   const [toggleMenu, setTogglemenu] = useState(false);
   const router = useRouter();
@@ -94,25 +94,34 @@ export default function Navbar() {
           <ul className="flex flex-col text-white bg-secondary gap-4 font-semibold p-4 w-full text-center">
             <li
               className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary"
-              onClick={() => navigate("/")}
+              onClick={() => {
+                navigate("/");
+                setTogglemenu(false);
+              }}
             >
               Home
             </li>
             <li
               className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary"
-              onClick={() => scrollToSection("explore", router)}
+              onClick={() => {
+                scrollToSection("explore", router);
+                setTogglemenu(false);
+              }}
             >
               Explore
             </li>
             <li
               className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary"
-              onClick={() => scrollToSection("/about", router)}
+              onClick={() => navigate("/about")}
             >
               About
             </li>
             <li
               className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary"
-              onClick={() => scrollToSection("contact", router)}
+              onClick={() => {
+                scrollToSection("footer", router);
+                setTogglemenu(false);
+              }}
             >
               Contact
             </li>
