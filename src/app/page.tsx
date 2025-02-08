@@ -7,7 +7,7 @@ import {
   faBook,
   faCalculator,
 } from "@fortawesome/free-solid-svg-icons";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faLinkedin, faReact, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Navbar from "./components/Navbar";
 import Link from "next/link";
@@ -37,10 +37,16 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-start gap-4">
-            <Link href={`${FRONTEND_APP_PATH}/auth/register`} className="bg-secondary text-center text-white px-6 py-2 rounded-lg hover:bg-[#6a3514] hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300">
+            <Link
+              href={`${FRONTEND_APP_PATH}/auth/register`}
+              className="bg-secondary text-center text-white px-6 py-2 rounded-lg hover:bg-[#6a3514] hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300"
+            >
               Get Started
             </Link>
-            <button onClick={(() => scrollToSection("explore", router))} className="bg-primary text-secondary px-6 py-2 rounded-lg transition border-2 border-secondary hover:bg-secondary hover:text-white w-full sm:w-auto cursor-pointer">
+            <button
+              onClick={() => scrollToSection("explore", router)}
+              className="bg-primary text-secondary px-6 py-2 rounded-lg transition border-2 border-secondary hover:bg-secondary hover:text-white w-full sm:w-auto cursor-pointer"
+            >
               Learn More
             </button>
           </div>
@@ -234,18 +240,35 @@ export default function Home() {
           <div>
             <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
             <div className="flex gap-4 mb-4">
-              <a href="#" className="text-white hover:text-secondary">
-                <i className="fab fa-twitter w-6 h-6"></i>
-              </a>
-              <a href="#" className="text-white hover:text-secondary">
-                <i className="fab fa-facebook-f w-6 h-6"></i>
-              </a>
-              <a href="#" className="text-white hover:text-secondary">
-                <i className="fab fa-linkedin-in w-6 h-6"></i>
-              </a>
-              <a href="#" className="text-white hover:text-secondary">
-                <i className="fab fa-instagram w-6 h-6"></i>
-              </a>
+              <ul>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-white hover:text-primary flex items-center gap-2 "
+                  >
+                    <FontAwesomeIcon icon={faTwitter} className="h-4 w-4" />
+                    <span>fragments@twitter.com</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-white hover:text-primary flex items-center gap-2 "
+                  >
+                    <FontAwesomeIcon icon={faFacebook} className="h-4 w-4" />
+                    <span>fragments@facebook.com</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-white hover:text-primary flex items-center gap-2 "
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4" />
+                    <span>fragments@linkedIn.com</span>
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
