@@ -1,18 +1,19 @@
 "use client";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Navbar from "../components/Navbar";
 import {
-  faChalkboardUser,
-  faComments,
-  faScaleBalanced,
   faBook,
-  faUsers,
-  faLock,
   faCertificate,
+  faChalkboardUser,
   faCog,
+  faComments,
+  faLock,
+  faScaleBalanced,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
-import { faFacebook, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 export default function About() {
   return (
     <>
@@ -53,7 +54,14 @@ export default function About() {
         </div>
 
         <section className="relative w-full h-96 p-10 md:p-20 bg-primary shadow-lg">
-          <div className="absolute inset-0 bg-cover bg-center"></div>
+            {/* Background Image */}
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: "url('/about_header.png')" }}
+            ></div>
+
+            {/* Overlay (Color Shade) */}
+            <div className="absolute inset-0 bg-white opacity-70"></div>
 
           <div className="relative flex items-center w-full h-full">
             <div className="max-w-2xl">
@@ -205,40 +213,48 @@ export default function About() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-32">
               <div className="flex flex-col items-center">
-                <img
+                <Image
                   src="https://github.com/shadcn.png"
                   alt="Team Member 1"
-                  className="w-32 h-32 rounded-full mb-4"
+                  width={128}
+                  height={128}
+                  className="rounded-full mb-4"
                 />
                 <h3 className="text-xl font-semibold">John Doe</h3>
                 <p className="text-sm">CEO</p>
               </div>
 
               <div className="flex flex-col items-center">
-                <img
+                <Image
                   src="https://github.com/shadcn.png"
                   alt="Team Member 2"
-                  className="w-32 h-32 rounded-full mb-4"
+                  width={128}
+                  height={128}
+                  className="rounded-full mb-4"
                 />
                 <h3 className="text-xl font-semibold">Jane Smith</h3>
                 <p className="text-sm">Marketing Manager</p>
               </div>
 
               <div className="flex flex-col items-center">
-                <img
+                <Image
                   src="https://github.com/shadcn.png"
                   alt="Team Member 3"
-                  className="w-32 h-32 rounded-full mb-4"
+                  width={128}
+                  height={128}
+                  className="rounded-full mb-4"
                 />
                 <h3 className="text-xl font-semibold">Emily Johnson</h3>
                 <p className="text-sm">Lead Developer</p>
               </div>
 
               <div className="flex flex-col items-center">
-                <img
+                <Image
                   src="https://github.com/shadcn.png"
                   alt="Team Member 4"
-                  className="w-32 h-32 rounded-full mb-4"
+                  width={128}
+                  height={128}
+                  className="rounded-full mb-4"
                 />
                 <h3 className="text-xl font-semibold">Michael Brown</h3>
                 <p className="text-sm">UI/UX Designer</p>
@@ -247,107 +263,7 @@ export default function About() {
           </div>
         </section>
 
-        <section id="footer" className="bg-secondary text-white py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-4 px-8 md:px-16">
-            <div>
-              <h4 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                <i className="fa-solid fa-feather-pointed"></i>
-                Fragment
-              </h4>
-              <p className="text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                malesuada quam vel nisi convallis, euismod volutpat erat
-                vestibulum.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-semibold mb-4">Quick Link</h4>
-              <ul>
-                <li>
-                  <Link href="#" className="text-white hover:text-primary">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-white hover:text-primary">
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-white hover:text-primary">
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-white hover:text-primary">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-semibold mb-4">Legal</h4>
-              <ul>
-                <li>
-                  <Link href="#" className="text-white hover:text-primary">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-white hover:text-primary">
-                    Terms of Service
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-white hover:text-primary">
-                    Cookie Policy
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
-              <div className="flex gap-4 mb-4">
-                <ul>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-white hover:text-primary flex items-center gap-2 "
-                    >
-                      <FontAwesomeIcon icon={faTwitter} className="h-4 w-4" />
-                      <span>fragments@twitter.com</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-white hover:text-primary flex items-center gap-2 "
-                    >
-                      <FontAwesomeIcon icon={faFacebook} className="h-4 w-4" />
-                      <span>fragments@facebook.com</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-white hover:text-primary flex items-center gap-2 "
-                    >
-                      <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4" />
-                      <span>fragments@linkedIn.com</span>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <footer className="text-center text-white pt-8 border-t border-gray-500">
-            <p className="text-sm">© 2025 Fragments All Rights Reserved.</p>
-          </footer>
-        </section>
+        <Footer />
       </div>
     </>
   );

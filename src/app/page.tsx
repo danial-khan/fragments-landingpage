@@ -1,18 +1,20 @@
 "use client";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 import {
-  faUsers,
-  faCogs,
-  faProjectDiagram,
   faBook,
   faCalculator,
+  faCogs,
+  faProjectDiagram,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faLinkedin, faReact, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import Navbar from "./components/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
-import { scrollToSection } from "./utils/navigation";
 import { useRouter } from "next/navigation";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import { scrollToSection } from "./utils/navigation";
 const FRONTEND_APP_PATH = process.env.NEXT_PUBLIC_FRONTEND_APP_BASE_URL;
 
 config.autoAddCss = false;
@@ -56,9 +58,11 @@ export default function Home() {
           id="hero-image"
           className="col-span-1 flex justify-center items-center mt-12 mb-4 object-cover"
         >
-          <img
-            src="books.svg"
+          <Image
+            src="/books.svg"
             alt="Placeholder Image"
+            width={500}
+            height={500}
             className="w-full md:h-[500px] object-contain"
           />
         </div>
@@ -176,112 +180,7 @@ export default function Home() {
         </button>
       </section>
 
-      <section id="footer" className="bg-secondary text-white py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-4 px-8 md:px-16">
-          <div>
-            <h4 className="text-xl font-semibold mb-4 flex items-center gap-2">
-              <i className="fa-solid fa-feather-pointed"></i>
-              Fragment
-            </h4>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              malesuada quam vel nisi convallis, euismod volutpat erat
-              vestibulum.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="text-xl font-semibold mb-4">Quick Link</h4>
-            <ul>
-              <li>
-                <a href="#" className="text-white hover:text-primary">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-primary">
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-primary">
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-primary">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-xl font-semibold mb-4">Legal</h4>
-            <ul>
-              <li>
-                <a href="#" className="text-white hover:text-primary">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-primary">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-primary">
-                  Cookie Policy
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
-            <div className="flex gap-4 mb-4">
-              <ul>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-white hover:text-primary flex items-center gap-2 "
-                  >
-                    <FontAwesomeIcon icon={faTwitter} className="h-4 w-4" />
-                    <span>fragments@twitter.com</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-white hover:text-primary flex items-center gap-2 "
-                  >
-                    <FontAwesomeIcon icon={faFacebook} className="h-4 w-4" />
-                    <span>fragments@facebook.com</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-white hover:text-primary flex items-center gap-2 "
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4" />
-                    <span>fragments@linkedIn.com</span>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <footer
-          id="footer"
-          className="text-center text-white pt-8 border-t border-gray-500"
-        >
-          <p className="text-sm">
-            © 2025 All Rights Reserved. Powered by YourCompany
-          </p>
-        </footer>
-      </section>
+      <Footer />
     </div>
   );
 }

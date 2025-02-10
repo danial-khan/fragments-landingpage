@@ -13,7 +13,8 @@ export default {
         background: "#0a0a0a",
         foreground: "#ededed",
         primary: "#f5e6d3",
-        secondary: "#8b4513"
+        secondary: "#8b4513",
+        semiSecondary: "#6a3514",
       },
     },
   },
