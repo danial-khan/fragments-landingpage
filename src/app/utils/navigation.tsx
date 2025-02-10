@@ -2,7 +2,7 @@
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
 export const scrollToSection = (id: string, router: AppRouterInstance) => {
-  if (window.location.pathname === "/about") {
+  if (window.location.pathname === "/about" || window.location.pathname === "/pricing") {
     router.push("/");
   }
   setTimeout(() => {
