@@ -59,7 +59,7 @@ export default function Navbar() {
           <li
             className="bg-primary text-secondary rounded py-2 px-4 hover:text-white hover:bg-secondary border border-secondary cursor-pointer transition duration-300"
             onClick={() => {
-              scrollToSection("footer", router);
+              navigate("/contact");
             }}
           >
             Contact
@@ -133,8 +133,7 @@ export default function Navbar() {
             <li
               className="text-secondary cursor-pointer hover:bg-[#e8dac8] border border-orange-100 rounded py-2 bg-primary"
               onClick={() => {
-                scrollToSection("footer", router);
-                setTogglemenu(false);
+                navigate("/contact")
               }}
             >
               Contact

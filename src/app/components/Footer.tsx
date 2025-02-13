@@ -20,8 +20,8 @@ export default function Footer() {
             Fragment
           </h4>
           <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            malesuada quam vel nisi convallis, euismod volutpat erat vestibulum.
+            Fostering a scholarly environment where knowledge meets community,
+            and learning knoves no bounds
           </p>
         </div>
 
@@ -112,7 +112,7 @@ export default function Footer() {
       {/* Footer Bottom */}
       <footer className="text-center text-white pt-8 border-t border-gray-500">
         <p className="text-sm">
-          © 2025 All Rights Reserved. Powered by YourCompany
+          © 2025 All Rights Reserved. Powered by Fragments
         </p>
       </footer>
     </section>

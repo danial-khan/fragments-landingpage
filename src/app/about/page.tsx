@@ -11,7 +11,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Link from "next/link";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 export default function About() {
@@ -19,40 +18,6 @@ export default function About() {
     <>
       <Navbar />
       <div className="font-sans">
-        <div
-          className="md:hidden navbar-menu hidden shadow-lg border border-gray-300 bg-white rounded-lg w-1/3 fixed top-15 right-0 h-full transform transition-transform duration-300 ease-in-out z-20"
-          aria-hidden="true"
-        >
-          <ul className="flex flex-col text-secondary gap-4 font-semibold p-4">
-            <li className="hover:text-primary cursor-pointer">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="hover:text-primary cursor-pointer">
-              <Link href="explore.html">Explore</Link>
-            </li>
-            <li className="hover:text-primary cursor-pointer">
-              <Link href="about.html">About</Link>
-            </li>
-            <li className="hover:text-primary cursor-pointer">
-              <Link href="contact.html">Contact</Link>
-            </li>
-          </ul>
-          <div className="flex flex-col gap-4 p-4">
-            <button
-              id="sign-in-button"
-              className="bg-white text-secondary py-2 px-4 rounded hover:bg-secondary hover:text-white cursor-pointer text-center border border-secondary"
-            >
-              <Link href="login.html">Sign In</Link>
-            </button>
-            <button
-              id="register-button"
-              className="bg-secondary text-white py-2 px-4 rounded hover:bg-[#6a3514] cursor-pointer text-center"
-            >
-              <Link href="login.html">Register</Link>
-            </button>
-          </div>
-        </div>
-
         <section className="relative w-full h-96 p-10 md:p-20 bg-primary shadow-lg">
             {/* Background Image */}
             <div
