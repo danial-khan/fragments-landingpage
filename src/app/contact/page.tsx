@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -13,6 +13,7 @@ import {
   faMapMarkerAlt,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
+import Loader from "../components/Loader";
 
 // Validation Schema using yup
 const validationSchema = yup
@@ -28,6 +29,8 @@ const validationSchema = yup
   .required();
 
 const Contact = () => {
+
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -52,6 +55,7 @@ const Contact = () => {
 
   return (
     <div>
+      {loading && <Loader />}
       <Navbar />
       <div className="px-12 py-16 flex items-center justify-center bg-yellow-50">
         <div className="flex flex-col lg:flex-row md:max-w-7xl w-full">
