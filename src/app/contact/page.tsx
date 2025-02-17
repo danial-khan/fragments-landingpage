@@ -138,7 +138,10 @@ const Contact = () => {
                 type="submit"
                 className="w-full p-3 text-white bg-secondary rounded hover:bg-semiSecondary flex items-center justify-center space-x-2"
               >
-                <FontAwesomeIcon icon={faPaperPlane} />
+                <FontAwesomeIcon
+                  icon={faPaperPlane}
+                  className="h-4 w-4"
+                />
                 <span>Submit</span>
               </button>
             </form>
