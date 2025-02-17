@@ -136,9 +136,9 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full p-3 text-white bg-secondary rounded hover:bg-semiSecondary flex items-center justify-center space-x-2"
+                className="p-3 text-white bg-secondary rounded hover:bg-semiSecondary flex items-center justify-center space-x-2 h-8 w-60 justify-self-center"
               >
-                <FontAwesomeIcon icon={faPaperPlane} />
+                <FontAwesomeIcon icon={faPaperPlane} className="h-4"/>
                 <span>Submit</span>
               </button>
             </form>
@@ -188,7 +188,7 @@ const ContactInfo = ({ icon, title, content }: ContactInfoProps) => {
   return (
     <div className="flex items-center gap-3 bg-white py-4 px-6 shadow-md border border-yellow-300 rounded-lg">
       <button className="bg-white border border-secondary rounded-lg p-3 flex items-center justify-center">
-        <FontAwesomeIcon icon={icon} className="text-secondary h-6 w-6" />
+        <FontAwesomeIcon icon={icon} className="text-secondary h-4" />
       </button>
       <div>
         <h2 className="text-lg text-secondary font-bold">{title}</h2>
