@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -14,6 +14,8 @@ import {
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 import Loader from "../components/Loader";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 // Validation Schema using yup
 const validationSchema = yup
@@ -29,7 +31,6 @@ const validationSchema = yup
   .required();
 
 const Contact = () => {
-
   const [loading, setLoading] = useState(false);
   const {
     register,
@@ -48,8 +49,19 @@ const Contact = () => {
   }
 
   const onSubmit = (data: FormData) => {
-    alert("Message sent successfully");
-    console.log("Form Data:", data);
+    setLoading(true);
+    axios
+      .post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/contact-us`, data)
+      .then(() => {
+        toast("Form has been submitted successfully", { type: "success" });
+      })
+      .catch(() => {
+        toast("Something went wrong, please try submitting again", {
+          type: "error",
+        });
+      }).finally(() => {
+        setLoading(false);
+      });
     reset();
   };
 
@@ -138,7 +150,7 @@ const Contact = () => {
                 type="submit"
                 className="p-3 text-white bg-secondary rounded hover:bg-semiSecondary flex items-center justify-center space-x-2 h-8 w-60 justify-self-center"
               >
-                <FontAwesomeIcon icon={faPaperPlane} className="h-4"/>
+                <FontAwesomeIcon icon={faPaperPlane} className="h-4" />
                 <span>Submit</span>
               </button>
             </form>
