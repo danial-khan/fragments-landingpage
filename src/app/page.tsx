@@ -9,7 +9,6 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Footer from "./components/Footer";
@@ -32,10 +31,8 @@ export default function Home() {
           <h1 className="text-3xl font-bold mb-4 mt-12 md:mt-24 pr-3 text-secondary">
             Learn, Educate, Discuss, Debate
           </h1>
-          <p className="font-bold mb-6 text-left leading-relaxed mx-auto text-secondary">
-            Lorem ipsum dolor sit. Aut cupiditate magni id corrupti
-            reprehenderit aliquam! Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Explicabo distinctio nesciunt pariatur reiciendis.
+          <p className="text-md font-medium mb-6 text-left leading-relaxed mx-auto text-secondary">
+            Fragments is a dynamic platform designed to bring curious minds together. With the spirit of “Learn, Educate, Discuss, Debate”, it creates a space where knowledge is shared, ideas are challenged, and perspectives are broadened. Whether you’re seeking to understand complex topics, share your expertise, or engage in meaningful discussions, Fragments is where learning transforms into dialogue and dialogue into growth.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-start gap-4">
@@ -58,13 +55,7 @@ export default function Home() {
           id="hero-image"
           className="col-span-1 flex justify-center items-center mt-12 mb-4 object-cover"
         >
-          <Image
-            src="/books.svg"
-            alt="Placeholder Image"
-            width={500}
-            height={500}
-            className="w-full md:h-[500px] object-contain"
-          />
+          <img src="/logo-no-bg.png" className="p" />
         </div>
       </section>
 

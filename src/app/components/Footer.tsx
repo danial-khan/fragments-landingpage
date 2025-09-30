@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faFacebook,
@@ -16,7 +15,7 @@ export default function Footer() {
         {/* Brand Section */}
         <div>
           <h4 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <FontAwesomeIcon icon={faFeatherPointed} className="h-4 w-4" />
+            <img src="/logo-no-bg.png" className="w-10 mr-2" />
             Fragment
           </h4>
           <p className="text-sm">

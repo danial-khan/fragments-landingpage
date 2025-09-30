@@ -1,6 +1,6 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFeatherPointed, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { scrollToSection } from "../utils/navigation";
@@ -17,10 +17,7 @@ export default function Navbar() {
     <>
       <nav className="border-b border-gray-300 px-6 py-4 flex justify-between items-center bg-primary md:px-15">
         <div className="flex items-center gap-2 sm:text-2xl font-bold text-secondary">
-          <FontAwesomeIcon
-            icon={faFeatherPointed}
-            className="text-secondary h-6"
-          />
+          <img src="/logo-no-bg.png" className="w-10 mr-2" />
           <span>Fragments</span>
         </div>
         <ul className="hidden lg:flex text-secondary gap-8 font-semibold text-xl">
