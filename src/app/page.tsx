@@ -1,10 +1,15 @@
 "use client";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
 import {
+  faAtom,
   faBook,
   faCalculator,
   faCogs,
+  faDollarSign,
+  faFlask,
+  faGlobe,
+  faLanguage,
+  faLeaf,
   faProjectDiagram,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
@@ -29,10 +34,18 @@ export default function Home() {
       >
         <div id="hero-text" className="col-span-1 flex flex-col justify-start">
           <h1 className="text-3xl font-bold mb-4 mt-12 md:mt-24 pr-3 text-secondary">
-            Learn, Educate, Discuss, Debate
+            Where Education Truly Pays Off
           </h1>
           <p className="text-md font-medium mb-6 text-left leading-relaxed mx-auto text-secondary">
-            Fragments is a dynamic platform designed to bring curious minds together. With the spirit of “Learn, Educate, Discuss, Debate”, it creates a space where knowledge is shared, ideas are challenged, and perspectives are broadened. Whether you’re seeking to understand complex topics, share your expertise, or engage in meaningful discussions, Fragments is where learning transforms into dialogue and dialogue into growth.
+            Fragments is the only platform online that encourages scholarly
+            discourse while financially rewarding knowledgeable and dedicated
+            educators. It is a dynamic platform designed to bring curious minds
+            together. With the spirit of “Learn, Educate, Discuss, Debate,”
+            Fragments creates a space where knowledge is shared, ideas are
+            challenged, and perspectives are broadened. Whether you’re seeking
+            to understand complex topics, share your expertise, or engage in
+            meaningful discussions, Fragments is where learning transforms into
+            dialogue and dialogue into growth.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-start gap-4">
@@ -69,7 +82,7 @@ export default function Home() {
               Discover our Features
             </h1>
             <p className="text-secondary font-bold mb-8">
-              Everything you need to engage in meaningful academic discussions
+              Everything you need to engage in rewarding academic discussions
             </p>
           </div>
 
@@ -82,7 +95,7 @@ export default function Home() {
                 />
                 <h5 className="text-xl font-bold mb-2">Fragment Trails</h5>
                 <p className="text-primary-foreground mb-4">
-                  With supporting text below as a natural additional content.
+                Educators start a learning trail in a subject of their choosing and share fragments of interesting and educational information. The ensuing discussion is a fragment trail.
                 </p>
               </div>
             </div>
@@ -95,7 +108,7 @@ export default function Home() {
                 />
                 <h5 className="text-xl font-bold mb-2">Community Learning</h5>
                 <p className="text-primary-foreground mb-4">
-                  With supporting text below as a natural additional content.
+                Learners participate in trails they are interested in. Through asking questions and engaging in dialogue the fragments trail continues and participants teach each other.
                 </p>
               </div>
             </div>
@@ -108,7 +121,7 @@ export default function Home() {
                 />
                 <h5 className="text-xl font-bold mb-2">Quality Control</h5>
                 <p className="text-primary-foreground mb-4">
-                  With supporting text below as a natural additional content.
+                Fragments undergo a 2-step assessment - first by AI to check for plagiarism and validity, and second by human reviewers who evaluate the quality of each fragment.
                 </p>
               </div>
             </div>
@@ -118,7 +131,7 @@ export default function Home() {
 
       <section id="academic" className="px-8 py-16 bg-primary">
         <h3 className="text-primary-foreground text-3xl font-bold mb-4 text-center text-secondary">
-          Academic Disciplines
+          Disciplines
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 text-secondary px-8">
           <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
@@ -128,23 +141,46 @@ export default function Home() {
             />
             <p className="text-primary-foreground">History</p>
           </div>
-
           <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
             <FontAwesomeIcon
-              icon={faBook}
+              icon={faGlobe}
               className="text-secondary h-5 group-hover:text-white transition-colors duration-300"
             />
-            <p className="text-primary-foreground">Literature</p>
+            <p className="text-primary-foreground">Geography</p>
           </div>
-
+          {/* economics */}
           <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
             <FontAwesomeIcon
-              icon={faReact}
+              icon={faDollarSign}
               className="text-secondary h-5 group-hover:text-white transition-colors duration-300"
             />
-            <p className="text-primary-foreground">Sciences</p>
+            <p className="text-primary-foreground">Economics</p>
           </div>
-
+          {/* chemistry */}
+          <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
+            <FontAwesomeIcon
+              icon={faFlask}
+              className="text-secondary h-5 group-hover:text-white transition-colors duration-300"
+            />
+            <p className="text-primary-foreground">Chemistry</p>
+          </div>
+          {/* biology */}
+          <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
+            <FontAwesomeIcon
+              icon={faLeaf}
+              className="text-secondary h-5 group-hover:text-white transition-colors duration-300"
+            />
+            <p className="text-primary-foreground">Biology</p>
+          </div>
+          {/* physics */}
+          <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
+            <FontAwesomeIcon
+              icon={faAtom}
+              className="text-secondary h-5 group-hover:text-white transition-colors duration-300"
+            />
+            <p className="text-primary-foreground">Physics</p>
+          </div>
+          {/* methamatics */}
           <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
             <FontAwesomeIcon
               icon={faCalculator}
@@ -152,9 +188,55 @@ export default function Home() {
             />
             <p className="text-primary-foreground">Mathematics</p>
           </div>
+          {/* English */}
+          <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
+            <FontAwesomeIcon
+              icon={faLanguage}
+              className="text-secondary h-5 group-hover:text-white transition-colors duration-300"
+            />
+            <p className="text-primary-foreground">English</p>
+          </div>
+          {/* Other literatures */}
+          <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
+            <FontAwesomeIcon
+              icon={faBook}
+              className="text-secondary h-5 group-hover:text-white transition-colors duration-300"
+            />
+            <p className="text-primary-foreground">Other Literatures</p>
+          </div>
+          {/* Modern Languages */}
+          <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
+            <FontAwesomeIcon
+              icon={faLanguage}
+              className="text-secondary h-5 group-hover:text-white transition-colors duration-300"
+            />
+            <p className="text-primary-foreground">Modern Languages</p>
+          </div>
+          {/* Religious Studies */}
+          <div className="group bg-white text-center sm:text-start shadow-lg rounded-lg p-4 px-8 text-secondary flex flex-row gap-2 hover:bg-secondary hover:text-white transition-colors duration-300">
+            <FontAwesomeIcon
+              icon={faBook}
+              className="text-secondary h-5 group-hover:text-white transition-colors duration-300"
+            />
+            <p className="text-primary-foreground">Religious Studies</p>
+          </div>
         </div>
       </section>
+      {/* suggest  a new declipline */}
+      <section id="suggest-discipline" className="px-8 py-16 bg-primary text-center">
+        <h3 className="text-primary-foreground text-3xl font-bold mb-4 text-center text-secondary">
+          Suggest a New Discipline
+        </h3>
+        <p className="text-secondary font-bold mb-8">
+          We are always looking for new disciplines to add to our platform. If you have a suggestion, please let us know.
+        </p>
+        {/* input */}
 
+        <input type="text" placeholder="Enter the name of the discipline" className="mx-auto block p-2 rounded-lg border border-secondary text-secondary w-[320px] mb-4 text-center" />
+        <button className="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-[#6a3514] hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300">
+          Suggest a New Discipline
+        </button>
+      </section>
       <section
         id="journey"
         className="flex flex-col items-center justify-center gap-2 bg-[#b15d28] py-12 px-12"
@@ -163,8 +245,7 @@ export default function Home() {
           Ready to start your Academic Journey?
         </h3>
         <p className="text-white text-sm sm:text-base mb-4">
-          Join community of scholars and contribiute to meaningful academic
-          discussions
+        Join a community of scholars and contribiute to meaningful academic discussions
         </p>
         <button className="bg-white text-secondary text-sm sm:text-base font-bold py-2 px-6 rounded-lg shadow-lg hover:text-white hover:bg-secondary transition duration-300 cursor-pointer">
           Create Your Account

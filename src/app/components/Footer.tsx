@@ -16,12 +16,12 @@ export default function Footer() {
         <div>
           <h4 className="text-xl font-semibold mb-4 flex items-center gap-2">
             <img src="/logo-no-bg.png" className="w-10 mr-2" />
-            Fragment
+            Fragments
           </h4>
-          <p className="text-sm">
+          <div className="block text-sm max-w-80">
             Fostering a scholarly environment where knowledge meets community,
             and learning knoves no bounds
-          </p>
+          </div>
         </div>
 
         {/* Quick Links */}

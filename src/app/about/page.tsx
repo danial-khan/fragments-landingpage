@@ -8,9 +8,9 @@ import {
   faLock,
   faScaleBalanced,
   faUsers,
+  faDollar,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 export default function About() {
@@ -19,14 +19,14 @@ export default function About() {
       <Navbar />
       <div className="font-sans">
         <section className="relative w-full h-96 p-10 md:p-20 bg-primary shadow-lg">
-            {/* Background Image */}
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url('/about_header.png')" }}
-            ></div>
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/about_header.png')" }}
+          ></div>
 
-            {/* Overlay (Color Shade) */}
-            <div className="absolute inset-0 bg-white opacity-70"></div>
+          {/* Overlay (Color Shade) */}
+          <div className="absolute inset-0 bg-white opacity-70"></div>
 
           <div className="relative flex items-center w-full h-full">
             <div className="max-w-2xl">
@@ -34,14 +34,56 @@ export default function About() {
                 About Fragments
               </h2>
               <p className="text-lg md:text-xl text-secondary font-semibold text-center md:text-start">
-                Fostering a scholarly environment where knowledge meets
-                community, and learning knoves no bounds
+                The only platform online that encourages scholarly discourse
+                while financially rewarding knowledgeable and dedicated
+                educators.
               </p>
             </div>
           </div>
         </section>
 
         <section className="w-full py-16 bg-[#f9f5f0] flex justify-center items-center">
+          <div className="text-center text-secondary max-w-4xl flex flex-col gap-5">
+            <h2 className="text-3xl font-semibold mb-4">We Invite...</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 pt-10 md:pt-5 gap-10 md:gap-20">
+              <div className="flex flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faBook}
+                  className="text-secondary h-8 w-8"
+                />
+                <p className="text-md mt-4">
+                  <b>Educators</b> to share their expertise with fragments of
+                  information.
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faComments}
+                  className="text-secondary h-8 w-8 mb-4"
+                />
+                <p className="text-md">
+                  <b>Learners</b> to ask questions and participate in scholorly
+                  discussion to extend the trail of fragments.
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faChalkboardUser}
+                  className="text-secondary h-8 w-8 mb-4"
+                />
+                <p className="text-md">
+                  <b>Reviewers</b> to provide feedback in the spirit of
+                  knowledge sharing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full py-16 bg-primary flex justify-center items-center">
           <div className="text-center text-secondary max-w-4xl flex flex-col gap-5">
             <h2 className="text-3xl font-semibold mb-4">Our Mission</h2>
 
@@ -100,6 +142,20 @@ export default function About() {
                 </h3>
                 <p className="text-sm max-w-[8rem]">
                   Challenge ideas respectfully.
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <div className="flex flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faDollar}
+                  className="text-secondary h-8 w-8"
+                />
+                <h3 className="text-xl font-semibold text-secondary mb-2">
+                  Reward
+                </h3>
+                <p className="text-sm max-w-[8rem]">
+                  Receive payment for your expertise.
                 </p>
               </div>
             </div>
@@ -169,65 +225,50 @@ export default function About() {
             </div>
           </div>
         </section>
-
-        <section className="w-full py-16 bg-[#f9f5f0] flex justify-center items-center">
-          <div className="text-center text-secondary max-w-4xl">
-            <h2 className="text-3xl font-semibold text-secondary mb-8">
-              Our Team
-            </h2>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-32">
-              <div className="flex flex-col items-center">
-                <Image
-                  src="https://github.com/shadcn.png"
-                  alt="Team Member 1"
-                  width={128}
-                  height={128}
-                  className="rounded-full mb-4"
-                />
-                <h3 className="text-xl font-semibold">John Doe</h3>
-                <p className="text-sm">CEO</p>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <Image
-                  src="https://github.com/shadcn.png"
-                  alt="Team Member 2"
-                  width={128}
-                  height={128}
-                  className="rounded-full mb-4"
-                />
-                <h3 className="text-xl font-semibold">Jane Smith</h3>
-                <p className="text-sm">Marketing Manager</p>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <Image
-                  src="https://github.com/shadcn.png"
-                  alt="Team Member 3"
-                  width={128}
-                  height={128}
-                  className="rounded-full mb-4"
-                />
-                <h3 className="text-xl font-semibold">Emily Johnson</h3>
-                <p className="text-sm">Lead Developer</p>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <Image
-                  src="https://github.com/shadcn.png"
-                  alt="Team Member 4"
-                  width={128}
-                  height={128}
-                  className="rounded-full mb-4"
-                />
-                <h3 className="text-xl font-semibold">Michael Brown</h3>
-                <p className="text-sm">UI/UX Designer</p>
-              </div>
-            </div>
+        <section className="w-full flex flex-col py-16 bg-primary flex justify-center items-center">
+          <div className="text-center text-secondary max-w-4xl flex gap-5">
+            <h2 className="text-3xl font-semibold mb-4">Fragments Rules</h2>
           </div>
+          {/* unordered list */}
+          <ul className="list-disc list-inside max-w-4xl text-secondary">
+            <li>
+              When a fragment is first published, it is evaluated first by AI
+              and second by human reviewers (subscribed users approved to
+              review)
+            </li>
+            <li>
+              When a fragment passes the initial AI review it is tagged with a
+              gold badge to demonstrate it has passed this first quality
+              assessment step for plagiarism and validity
+            </li>
+            <li>If the fragment does not pass this first step it is removed</li>
+            <li>
+              The second review is by human reviewers - if a reviewer has
+              concerns over the fragment, that fragment is marked with a red
+              flag
+            </li>
+            <li>
+              Users can hover over the red flag and a text box will appear
+              outlining the reviewer’s concerns
+            </li>
+            <li>If there are three red flags the fragment is removed</li>
+            <li>Reviewers cannot review themselves</li>
+            <li>
+              Users can comment on fragments - these comments are evaluated by
+              AI to give a score of between -1 and +1. The comment and the score
+              show up under the fragment. If the score is between 0 and +1, the
+              comment is marked in green. If the score is between -1 and 0, the
+              comment is marked in red
+            </li>
+            <li>Payment (Fragments Rewards) can only be earned by educators</li>
+            <li>
+              The two mechanisms of earning rewards are i) number of upvotes for
+              each fragment published and ii) when the fragment earns a comment
+              by another user that, on a scale of -1 to +1, is adjudged by AI to
+              score at least +0.5
+            </li>
+          </ul>
         </section>
-
         <Footer />
       </div>
     </>

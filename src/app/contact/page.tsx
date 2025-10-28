@@ -9,8 +9,6 @@ import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
-  faPhone,
-  faMapMarkerAlt,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 import Loader from "../components/Loader";
@@ -59,7 +57,8 @@ const Contact = () => {
         toast("Something went wrong, please try submitting again", {
           type: "error",
         });
-      }).finally(() => {
+      })
+      .finally(() => {
         setLoading(false);
       });
     reset();
@@ -135,7 +134,7 @@ const Contact = () => {
                   className={`w-full p-3 border outline-none rounded ${
                     errors.message ? "border-red-500" : "border-primary"
                   }`}
-                  rows={5}
+                  rows={6}
                   {...register("message")}
                 />
                 {errors.message && (
@@ -158,6 +157,8 @@ const Contact = () => {
 
           {/* Right Side: Contact Information */}
           <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center">
+            {/* logo */}
+            <img src="/logo-no-bg.png" className="w-60 mb-4 mx-auto" />
             <h2 className="text-3xl font-bold text-secondary mb-4">
               Get In Touch
             </h2>
@@ -170,16 +171,6 @@ const Contact = () => {
                 icon={faEnvelope}
                 title="Our Email"
                 content="support@fragments.com"
-              />
-              <ContactInfo
-                icon={faPhone}
-                title="Our Phone"
-                content="+1 (123) 456-7890"
-              />
-              <ContactInfo
-                icon={faMapMarkerAlt}
-                title="Our Office"
-                content="123 Knowledge Lane, Scholar City"
               />
             </div>
           </div>

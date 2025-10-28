@@ -1,4 +1,4 @@
-// File: /Users/app/Desktop/mernsol/fragments/fragments-landingpage/src/app/contact/page.tsx
+// File: /Users/app/Desktop/Open source projects/mernsol/fragments/fragments-landingpage/src/app/contact/page.tsx
 import * as entry from '../../../../src/app/contact/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
