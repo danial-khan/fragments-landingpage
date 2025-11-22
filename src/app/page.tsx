@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-start gap-4">
             <Link
               href={`${FRONTEND_APP_PATH}/auth/register`}
-              className="bg-secondary text-center text-white px-6 py-2 rounded-lg hover:bg-[#6a3514] hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300"
+              className="bg-secondary text-center text-white px-6 py-2 rounded-lg hover:bg-[var(--secondary-dark)] hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300"
             >
               Get Started
             </Link>
@@ -74,7 +74,7 @@ export default function Home() {
 
       <section
         id="explore"
-        className="bg-[#FEFDE9] flex items-center justify-center px-8 w-full py-12 md:px-12"
+        className="bg-[var(--background-light)] flex items-center justify-center px-8 w-full py-12 md:px-12"
       >
         <div className="text-secondary w-full max-w-screen-xl">
           <div className="text-center">
@@ -233,13 +233,13 @@ export default function Home() {
         {/* input */}
 
         <input type="text" placeholder="Enter the name of the discipline" className="mx-auto block p-2 rounded-lg border border-secondary text-secondary w-[320px] mb-4 text-center" />
-        <button className="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-[#6a3514] hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300">
+        <button className="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-[var(--secondary-dark)] hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300">
           Suggest a New Discipline
         </button>
       </section>
       <section
         id="journey"
-        className="flex flex-col items-center justify-center gap-2 bg-[#b15d28] py-12 px-12"
+        className="flex flex-col items-center justify-center gap-2 bg-[var(--secondary-medium)] py-12 px-12"
       >
         <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
           Ready to start your Academic Journey?

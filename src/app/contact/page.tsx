@@ -68,7 +68,7 @@ const Contact = () => {
     <div>
       {loading && <Loader />}
       <Navbar />
-      <div className="px-12 py-16 flex items-center justify-center bg-yellow-50">
+      <div className="px-12 py-16 flex items-center justify-center bg-[var(--background-pale)]">
         <div className="flex flex-col lg:flex-row md:max-w-7xl w-full">
           {/* Left Side: Contact Form */}
           <div className="w-full lg:w-1/2 p-6">
@@ -82,12 +82,12 @@ const Contact = () => {
                   type="text"
                   placeholder="Your Name"
                   className={`w-full p-3 border outline-none rounded ${
-                    errors.name ? "border-red-500" : "border-primary"
+                    errors.name ? "border-[var(--error)]" : "border-primary"
                   }`}
                   {...register("name")}
                 />
                 {errors.name && (
-                  <p className="text-red-500 text-sm mt-1">
+                  <p className="text-[var(--error)] text-sm mt-1">
                     {errors.name.message}
                   </p>
                 )}
@@ -99,12 +99,12 @@ const Contact = () => {
                   type="email"
                   placeholder="Your Email"
                   className={`w-full p-3 border outline-none rounded ${
-                    errors.email ? "border-red-500" : "border-primary"
+                    errors.email ? "border-[var(--error)]" : "border-primary"
                   }`}
                   {...register("email")}
                 />
                 {errors.email && (
-                  <p className="text-red-500 text-sm mt-1">
+                  <p className="text-[var(--error)] text-sm mt-1">
                     {errors.email.message}
                   </p>
                 )}
@@ -116,12 +116,12 @@ const Contact = () => {
                   type="text"
                   placeholder="Subject"
                   className={`w-full p-3 border outline-none rounded ${
-                    errors.subject ? "border-red-500" : "border-primary"
+                    errors.subject ? "border-[var(--error)]" : "border-primary"
                   }`}
                   {...register("subject")}
                 />
                 {errors.subject && (
-                  <p className="text-red-500 text-sm mt-1">
+                  <p className="text-[var(--error)] text-sm mt-1">
                     {errors.subject.message}
                   </p>
                 )}
@@ -132,13 +132,13 @@ const Contact = () => {
                 <textarea
                   placeholder="Your Message"
                   className={`w-full p-3 border outline-none rounded ${
-                    errors.message ? "border-red-500" : "border-primary"
+                    errors.message ? "border-[var(--error)]" : "border-primary"
                   }`}
                   rows={6}
                   {...register("message")}
                 />
                 {errors.message && (
-                  <p className="text-red-500 text-sm mt-1">
+                  <p className="text-[var(--error)] text-sm mt-1">
                     {errors.message.message}
                   </p>
                 )}
@@ -162,7 +162,7 @@ const Contact = () => {
             <h2 className="text-3xl font-bold text-secondary mb-4">
               Get In Touch
             </h2>
-            <p className="text-gray-500">
+            <p className="text-[var(--text-muted)]">
               Contact us for inquiries or feedback. We value your thoughts and
               are here to help you.
             </p>
@@ -189,7 +189,7 @@ interface ContactInfoProps {
 
 const ContactInfo = ({ icon, title, content }: ContactInfoProps) => {
   return (
-    <div className="flex items-center gap-3 bg-white py-4 px-6 shadow-md border border-yellow-300 rounded-lg">
+    <div className="flex items-center gap-3 bg-white py-4 px-6 shadow-md border border-[var(--border-yellow)] rounded-lg">
       <button className="bg-white border border-secondary rounded-lg p-3 flex items-center justify-center">
         <FontAwesomeIcon icon={icon} className="text-secondary h-4" />
       </button>

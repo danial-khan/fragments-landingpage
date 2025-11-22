@@ -2,15 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 :root {
+  /* Base Colors */
   --background: #ffffff;
   --foreground: #171717;
   --primary: #f5e6d3;
   --secondary: #8b4513;
+  
+  /* Secondary Variations */
+  --secondary-dark: #6a3514;
+  --secondary-medium: #b15d28;
+  
+  /* Background Variations */
+  --background-alt: #f9f5f0;
+  --background-light: #FEFDE9;
+  --background-pale: #fefce8;
+  
+  /* Accent Colors */
+  --accent-orange: #f97316;
+  --accent-orange-dark: #ea580c;
+  --accent-orange-darker: #c2410c;
+  --accent-orange-light: #fed7aa;
+  
+  /* Border Colors */
+  --border-light: #d1d5db;
+  --border-medium: #6b7280;
+  --border-pale: #e5e7eb;
+  --border-yellow: #fde047;
+  --primary-hover: #e8dac8;
+  
+  /* Text Colors */
+  --text-muted: #6b7280;
+  --text-dark: #1f2937;
+  
+  /* State Colors */
+  --error: #ef4444;
+  --success: #22c55e;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Crimson Text', ui-serif, Georgia, serif;
+}
+
+/* Use Inter for headings and UI elements */
+h1, h2, h3, h4, h5, h6, button, .btn, nav, .navigation {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }

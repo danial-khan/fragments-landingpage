@@ -42,7 +42,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="w-full py-16 bg-[#f9f5f0] flex justify-center items-center">
+        <section className="w-full py-16 bg-[var(--background-alt)] flex justify-center items-center">
           <div className="text-center text-secondary max-w-4xl flex flex-col gap-5">
             <h2 className="text-3xl font-semibold mb-4">We Invite...</h2>
 
@@ -162,7 +162,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="w-full py-16 bg-[#FEFDE9] flex justify-center items-center">
+        <section className="w-full py-16 bg-[var(--background-light)] flex justify-center items-center">
           <div className="text-center px-4 text-secondary max-w-6xl">
             <h2 className="text-3xl font-semibold mb-8">Platform Features</h2>
             {/* hover:bg-secondary hover:text-white transition-colors duration-300 TO PUT HOVER EFFECT */}

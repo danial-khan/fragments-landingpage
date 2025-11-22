@@ -9,6 +9,10 @@ export default {
   theme: {
     extend: {
       scrollBehavior:['smooth'],
+      fontFamily: {
+        serif: ['var(--font-crimson-text)', 'ui-serif', 'Georgia', 'serif'],
+        sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
       colors: {
         background: "#0a0a0a",
         foreground: "#ededed",

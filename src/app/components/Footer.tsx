@@ -109,7 +109,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <footer className="text-center text-white pt-8 border-t border-gray-500">
+      <footer className="text-center text-white pt-8 border-t border-[var(--border-medium)]">
         <p className="text-sm">
           © 2025 All Rights Reserved. Powered by Fragments
         </p>
