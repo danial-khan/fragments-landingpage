@@ -1,3 +1,4 @@
 {
+  "/how-it-works/page": "app/how-it-works/page.js",
   "/page": "app/page.js"
 }

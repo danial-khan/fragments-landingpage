@@ -29,22 +29,22 @@ export default function Footer() {
           <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="text-white hover:text-primary">
+              <Link href="#" className="text-white hover:text-accent-light transition">
                 About
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-white hover:text-primary">
+              <Link href="#" className="text-white hover:text-accent-light transition">
                 Features
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-white hover:text-primary">
+              <Link href="#" className="text-white hover:text-accent-light transition">
                 Pricing
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-white hover:text-primary">
+              <Link href="#" className="text-white hover:text-accent-light transition">
                 Contact
               </Link>
             </li>
@@ -56,17 +56,17 @@ export default function Footer() {
           <h4 className="text-xl font-semibold mb-4">Legal</h4>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="text-white hover:text-primary">
+              <Link href="#" className="text-white hover:text-accent-light transition">
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-white hover:text-primary">
+              <Link href="#" className="text-white hover:text-accent-light transition">
                 Terms of Service
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-white hover:text-primary">
+              <Link href="#" className="text-white hover:text-accent-light transition">
                 Cookie Policy
               </Link>
             </li>
@@ -80,7 +80,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="text-white hover:text-primary flex items-center gap-2"
+                className="text-white hover:text-highlight-light transition flex items-center gap-2"
               >
                 <FontAwesomeIcon icon={faTwitter} className="h-4 w-4" />
                 <span>fragments@twitter.com</span>
@@ -89,7 +89,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="text-white hover:text-primary flex items-center gap-2"
+                className="text-white hover:text-highlight-light transition flex items-center gap-2"
               >
                 <FontAwesomeIcon icon={faFacebook} className="h-4 w-4" />
                 <span>fragments@facebook.com</span>
@@ -98,7 +98,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="text-white hover:text-primary flex items-center gap-2"
+                className="text-white hover:text-highlight-light transition flex items-center gap-2"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4" />
                 <span>fragments@linkedIn.com</span>
@@ -109,7 +109,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <footer className="text-center text-white pt-8 border-t border-[var(--border-medium)]">
+      <footer className="text-center text-white pt-8 border-t border-border-medium">
         <p className="text-sm">
           © 2025 All Rights Reserved. Powered by Fragments
         </p>

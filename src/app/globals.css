@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 :root {
   /* Base Colors */
   --background: #ffffff;
@@ -42,13 +40,14 @@
   --success: #22c55e;
 }
 
+/* Font family */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Crimson Text', ui-serif, Georgia, serif;
+  font-family:  Arial, Helvetica, sans-serif;
 }
 
-/* Use Inter for headings and UI elements */
-h1, h2, h3, h4, h5, h6, button, .btn, nav, .navigation {
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+/* Use configured font for all elements */
+h1, h2, h3, h4, h5, h6, button {
+  font-family: var(--font-main), cursive;
 }

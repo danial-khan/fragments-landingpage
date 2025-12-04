@@ -15,7 +15,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <nav className="border-b border-[var(--border-light)] px-6 py-4 flex justify-between items-center bg-primary md:px-15">
+      <nav className="border-b border-border-light px-6 py-4 flex justify-between items-center bg-primary md:px-15">
         <div className="flex items-center gap-2 sm:text-2xl font-bold text-secondary">
           <img src="/logo-no-bg.png" className="w-10 mr-2" />
           <span>Fragments</span>
@@ -44,6 +44,14 @@ export default function Navbar() {
             }}
           >
             About
+          </li>
+          <li
+            className="bg-primary text-secondary rounded py-2 px-4 hover:text-white hover:bg-secondary border border-secondary cursor-pointer transition duration-300"
+            onClick={() => {
+              navigate("/how-it-works");
+            }}
+          >
+            How It Works
           </li>
           <li
             className="bg-primary text-secondary rounded py-2 px-4 hover:text-white hover:bg-secondary border border-secondary cursor-pointer transition duration-300"
@@ -77,14 +85,14 @@ export default function Navbar() {
           <a
             href={`${FRONTEND_APP_PATH}/auth/login`}
             id="sign-in-button"
-            className="bg-primary text-secondary py-2 px-6 rounded hover:bg-secondary hover:text-white cursor-pointer text-center border border-secondary whitespace-nowrap transition duration-300"
+            className="bg-primary text-highlight py-2 px-6 rounded hover:bg-highlight hover:text-white cursor-pointer text-center border border-highlight whitespace-nowrap transition duration-300"
           >
             Sign In
           </a>
           <a
             href={`${FRONTEND_APP_PATH}/auth/register`}
             id="register-button"
-            className="bg-secondary text-white py-2 px-6 rounded hover:bg-[var(--secondary-dark)] cursor-pointer text-center whitespace-nowrap min-w-[120px] flex-shrink-0 transition duration-300"
+            className="bg-accent text-white py-2 px-6 rounded hover:bg-accent-dark cursor-pointer text-center whitespace-nowrap min-w-[120px] flex-shrink-0 transition duration-300"
           >
             Register
           </a>
@@ -93,12 +101,12 @@ export default function Navbar() {
       {/* Toggle Menu */}
       {toggleMenu && (
         <div
-          className="lg:hidden navbar-menu shadow-lg border border-[var(--border-light)] bg-white rounded-lg"
+          className="lg:hidden navbar-menu shadow-lg border border-border-light bg-white rounded-lg"
           aria-hidden="true"
         >
           <ul className="flex flex-col text-white bg-secondary gap-4 font-semibold p-4 w-full text-center">
             <li
-              className="text-secondary cursor-pointer hover:bg-[var(--primary-hover)] border border-[var(--accent-orange-light)] rounded py-2 bg-primary"
+              className="text-secondary cursor-pointer hover:bg-primary-hover border border-accent-light rounded py-2 bg-primary"
               onClick={() => {
                 navigate("/");
                 setTogglemenu(false);
@@ -107,7 +115,7 @@ export default function Navbar() {
               Home
             </li>
             <li
-              className="text-secondary cursor-pointer hover:bg-[var(--primary-hover)] border border-[var(--accent-orange-light)] rounded py-2 bg-primary"
+              className="text-secondary cursor-pointer hover:bg-primary-hover border border-accent-light rounded py-2 bg-primary"
               onClick={() => {
                 scrollToSection("explore", router);
                 setTogglemenu(false);
@@ -116,19 +124,34 @@ export default function Navbar() {
               Explore
             </li>
             <li
-              className="text-secondary cursor-pointer hover:bg-[var(--primary-hover)] border border-[var(--accent-orange-light)] rounded py-2 bg-primary"
-              onClick={() => navigate("/about")}
+              className="text-secondary cursor-pointer hover:bg-primary-hover border border-accent-light rounded py-2 bg-primary"
+              onClick={() => {
+                navigate("/about");
+                setTogglemenu(false);
+              }}
             >
               About
             </li>
             <li
-              className="text-secondary cursor-pointer hover:bg-[var(--primary-hover)] border border-[var(--accent-orange-light)] rounded py-2 bg-primary"
-              onClick={() => navigate("/pricing")}
+              className="text-secondary cursor-pointer hover:bg-primary-hover border border-accent-light rounded py-2 bg-primary"
+              onClick={() => {
+                navigate("/how-it-works");
+                setTogglemenu(false);
+              }}
+            >
+              How It Works
+            </li>
+            <li
+              className="text-secondary cursor-pointer hover:bg-primary-hover border border-accent-light rounded py-2 bg-primary"
+              onClick={() => {
+                navigate("/pricing");
+                setTogglemenu(false);
+              }}
             >
               Pricing
             </li>
             <li
-              className="text-secondary cursor-pointer hover:bg-[var(--primary-hover)] border border-[var(--accent-orange-light)] rounded py-2 bg-primary"
+              className="text-secondary cursor-pointer hover:bg-primary-hover border border-accent-light rounded py-2 bg-primary"
               onClick={() => {
                 navigate("/contact")
               }}
@@ -140,14 +163,14 @@ export default function Navbar() {
             <a
               href={`${FRONTEND_APP_PATH}/auth/login`}
               id="sign-in-button"
-              className="bg-secondary block mx-2 text-primary py-2 px-4 rounded hover:bg-[var(--secondary-dark)] hover:text-white cursor-pointer text-center border border-primary whitespace-nowrap"
+              className="bg-secondary block mx-2 text-primary py-2 px-4 rounded hover:bg-secondary-dark hover:text-white cursor-pointer text-center border border-primary whitespace-nowrap"
             >
               Sign In
             </a>
             <a
               href={`${FRONTEND_APP_PATH}/auth/register`}
               id="register-button"
-              className="bg-secondary block text-white py-2 px-4 rounded hover:bg-[var(--secondary-dark)] cursor-pointer text-center border border-primary mx-2 mt-4"
+              className="bg-secondary block text-white py-2 px-4 rounded hover:bg-secondary-dark cursor-pointer text-center border border-primary mx-2 mt-4"
             >
               Register
             </a>
