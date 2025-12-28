@@ -6,20 +6,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/how-it-works/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/how-it-works/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/about/page": [
+    "/how-it-works/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/page.js"
+      "static/chunks/app/how-it-works/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

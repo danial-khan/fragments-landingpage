@@ -6,38 +6,38 @@
   /* Base Colors */
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #f5e6d3;
-  --secondary: #8b4513;
+  --primary: #eff6ff;
+  --secondary: #2563eb;
   
   /* Secondary Variations */
-  --secondary-dark: #6a3514;
-  --secondary-medium: #b15d28;
+  --secondary-dark: #1d4ed8;
+  --secondary-medium: #3b82f6;
   
   /* Background Variations */
-  --background-alt: #f9f5f0;
-  --background-light: #FEFDE9;
-  --background-pale: #fefce8;
+  --background-alt: #f0f9ff;
+  --background-light: #e0f2fe;
+  --background-pale: #dbeafe;
   
   /* Accent Colors */
-  --accent-orange: #f97316;
-  --accent-orange-dark: #ea580c;
-  --accent-orange-darker: #c2410c;
-  --accent-orange-light: #fed7aa;
+  --accent-orange: #fb923c;
+  --accent-orange-dark: #f97316;
+  --accent-orange-darker: #ea580c;
+  --accent-orange-light: #fdba74;
+  --primary-hover: #dbeafe;
   
   /* Border Colors */
-  --border-light: #d1d5db;
-  --border-medium: #6b7280;
+  --border-light: #bfdbfe;
+  --border-medium: #3b82f6;
   --border-pale: #e5e7eb;
-  --border-yellow: #fde047;
-  --primary-hover: #e8dac8;
+  --border-yellow: #fdba74;
   
   /* Text Colors */
-  --text-muted: #6b7280;
-  --text-dark: #1f2937;
+  --text-muted: #64748b;
+  --text-dark: #1e293b;
   
   /* State Colors */
   --error: #ef4444;
-  --success: #22c55e;
+  --success: #10b981;
 }
 
 /* Font family */
@@ -49,5 +49,5 @@ body {
 
 /* Use configured font for all elements */
 h1, h2, h3, h4, h5, h6, button {
-  font-family: var(--font-main), cursive;
+  font-family:  Arial, Helvetica, sans-serif;
 }

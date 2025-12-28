@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { UnifrakturMaguntia } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 
-const satisfy = UnifrakturMaguntia({
+const satisfy = Roboto({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
