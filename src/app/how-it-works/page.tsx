@@ -8,7 +8,6 @@ import {
   faExclamationTriangle,
   faUserShield,
   faComments,
-  faDollarSign,
   faTrophy,
   faCheckCircle,
   faGraduationCap,

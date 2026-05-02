@@ -42,7 +42,7 @@ export default function Home() {
             educators. It is a dynamic platform designed to bring curious minds
             together. With the spirit of <span className="font-bold text-secondary">&quot;Learn, Educate, Discuss, Debate,&quot;</span>
             Fragments creates a space where knowledge is shared, ideas are
-            challenged, and perspectives are broadened. Whether you're seeking
+            challenged, and perspectives are broadened. Whether you&apos;re seeking
             to understand complex topics, share your expertise, or engage in
             meaningful discussions, Fragments is where learning transforms into
             dialogue and dialogue into <span className="font-bold text-highlight">growth</span>.
