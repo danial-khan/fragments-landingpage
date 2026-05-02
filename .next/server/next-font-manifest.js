@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/zeeshanhurmat/Desktop/my-work/Frontend/fragments-landingpage/src/app/layout\":[\"static/media/3a9fd9773111cd4d-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

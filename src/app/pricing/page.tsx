@@ -6,6 +6,9 @@ import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { frontendAppBaseUrl } from "../utils/frontendAppBaseUrl";
+import UserPanelAdSense from "../components/UserPanelAdSense";
+
+const userPanelAdSlot = process.env.NEXT_PUBLIC_ADSENSE_SLOT_USER_PANEL ?? "";
 
 const Pricing = () => {
     const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
@@ -17,6 +20,14 @@ const Pricing = () => {
     <div>
       <Navbar />
       <main className="bg-bgAlt py-10 md:px-10 px-4">
+        <div
+          className={
+            userPanelAdSlot
+              ? "mx-auto flex max-w-7xl flex-col items-start gap-10 xl:flex-row"
+              : "mx-auto max-w-7xl"
+          }
+        >
+          <div className="min-w-0 flex-1">
         <h1 className="font-bold md:text-3xl text-2xl text-center">
         Choose Your Fragments Journey
         </h1>
@@ -227,6 +238,14 @@ const Pricing = () => {
             </div>
           </div>
         </section>
+          </div>
+
+          {userPanelAdSlot ? (
+            <aside className="mx-auto w-full shrink-0 xl:sticky xl:top-24 xl:mx-0 xl:w-[320px]">
+              <UserPanelAdSense />
+            </aside>
+          ) : null}
+        </div>
       </main>
       <Footer />
     </div>

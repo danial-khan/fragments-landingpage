@@ -18,6 +18,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import AdSenseDisplay from "./components/AdSenseDisplay";
 import { scrollToSection } from "./utils/navigation";
 import { frontendAppBaseUrl } from "./utils/frontendAppBaseUrl";
 
@@ -71,6 +72,20 @@ export default function Home() {
           <img src="/logo-no-bg.png" className="p" />
         </div>
       </section>
+
+      {process.env.NEXT_PUBLIC_ADSENSE_SLOT_LANDING ? (
+        <section
+          className="border-y border-border-pale bg-bgLight py-8 px-4"
+          aria-label="Advertisement"
+        >
+          <div className="mx-auto max-w-4xl">
+            <AdSenseDisplay
+              slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LANDING}
+              className="min-h-[120px]"
+            />
+          </div>
+        </section>
+      ) : null}
 
       <section
         id="explore"

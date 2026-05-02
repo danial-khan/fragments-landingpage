@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import AdSenseDisplay from "./AdSenseDisplay";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faFacebook,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+
+const footerAdSlot = process.env.NEXT_PUBLIC_ADSENSE_SLOT_FOOTER ?? "";
 
 export default function Footer() {
   return (
@@ -107,6 +110,17 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
+      {footerAdSlot ? (
+        <div
+          className="flex justify-center px-4 pb-8 md:px-16"
+          aria-label="Advertisement"
+        >
+          <div className="w-full max-w-3xl">
+            <AdSenseDisplay slot={footerAdSlot} className="min-h-[100px]" />
+          </div>
+        </div>
+      ) : null}
 
       {/* Footer Bottom */}
       <footer className="text-center text-white pt-8 border-t border-border-medium">
