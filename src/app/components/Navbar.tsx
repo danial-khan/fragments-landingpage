@@ -4,7 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { scrollToSection } from "../utils/navigation";
-const FRONTEND_APP_PATH = process.env.NEXT_PUBLIC_FRONTEND_APP_BASE_URL;
+import { frontendAppBaseUrl } from "../utils/frontendAppBaseUrl";
 
 export default function Navbar() {
   const [toggleMenu, setTogglemenu] = useState(false);
@@ -83,14 +83,14 @@ export default function Navbar() {
 
         <div className="hidden lg:flex flex-row gap-4 p-4">
           <a
-            href={`${FRONTEND_APP_PATH}/auth/login`}
+            href={`${frontendAppBaseUrl}/auth/login`}
             id="sign-in-button"
             className="bg-primary text-highlight py-2 px-6 rounded hover:bg-highlight hover:text-white cursor-pointer text-center border border-highlight whitespace-nowrap transition duration-300"
           >
             Sign In
           </a>
           <a
-            href={`${FRONTEND_APP_PATH}/auth/register`}
+            href={`${frontendAppBaseUrl}/auth/register`}
             id="register-button"
             className="bg-accent text-white py-2 px-6 rounded hover:bg-accent-dark cursor-pointer text-center whitespace-nowrap min-w-[120px] flex-shrink-0 transition duration-300"
           >
@@ -161,14 +161,14 @@ export default function Navbar() {
           </ul>
           <div className="bg-secondary py-5 w-full">
             <a
-              href={`${FRONTEND_APP_PATH}/auth/login`}
+              href={`${frontendAppBaseUrl}/auth/login`}
               id="sign-in-button"
               className="bg-secondary block mx-2 text-primary py-2 px-4 rounded hover:bg-secondary-dark hover:text-white cursor-pointer text-center border border-primary whitespace-nowrap"
             >
               Sign In
             </a>
             <a
-              href={`${FRONTEND_APP_PATH}/auth/register`}
+              href={`${frontendAppBaseUrl}/auth/register`}
               id="register-button"
               className="bg-secondary block text-white py-2 px-4 rounded hover:bg-secondary-dark cursor-pointer text-center border border-primary mx-2 mt-4"
             >

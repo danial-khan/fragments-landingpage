@@ -19,7 +19,7 @@ import { useRouter } from "next/navigation";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { scrollToSection } from "./utils/navigation";
-const FRONTEND_APP_PATH = process.env.NEXT_PUBLIC_FRONTEND_APP_BASE_URL;
+import { frontendAppBaseUrl } from "./utils/frontendAppBaseUrl";
 
 config.autoAddCss = false;
 export default function Home() {
@@ -50,7 +50,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row justify-start gap-4">
             <Link
-              href={`${FRONTEND_APP_PATH}/auth/register`}
+              href={`${frontendAppBaseUrl}/auth/register`}
               className="bg-accent text-center text-white px-6 py-2 rounded-lg hover:bg-accent-dark hover:text-white transition w-full sm:w-auto cursor-pointer tansition duration-300 font-semibold shadow-lg"
             >
               Get Started
@@ -248,7 +248,7 @@ export default function Home() {
         Join a community of scholars and contribiute to meaningful academic discussions
         </p>
         <a
-          href={`${FRONTEND_APP_PATH}/auth/register`}
+          href={`${frontendAppBaseUrl}/auth/register`}
           className="bg-accent text-white text-sm sm:text-base font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-accent-dark hover:scale-105 transition-all duration-300 cursor-pointer inline-block"
         >
           Create Your Account

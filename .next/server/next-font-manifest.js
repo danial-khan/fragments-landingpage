@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/app/Desktop/Open source projects/mernsol/fragments/fragments-landingpage/src/app/layout\":[\"static/media/c4a2ca76cbcd952a-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

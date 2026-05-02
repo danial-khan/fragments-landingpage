@@ -5,8 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-
-const FRONTEND_APP_PATH = process.env.NEXT_PUBLIC_FRONTEND_APP_BASE_URL;
+import { frontendAppBaseUrl } from "../utils/frontendAppBaseUrl";
 
 const Pricing = () => {
     const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
@@ -52,7 +51,7 @@ const Pricing = () => {
                     <li className="text-accent-dark">⚠ Contains advertisements</li>
                   </ul>
                   <a
-                    href={`${FRONTEND_APP_PATH}/auth/register?plan=basic_learner`}
+                    href={`${frontendAppBaseUrl}/auth/register?plan=basic_learner`}
                     className="mt-6 w-full bg-primary text-secondary font-bold py-2 px-6 rounded-lg hover:bg-secondary hover:text-white transition cursor-pointer block text-center"
                   >
                     Get Started
@@ -80,7 +79,7 @@ const Pricing = () => {
                     <li>✔ Priority support</li>
                   </ul>
                   <a
-                    href={`${FRONTEND_APP_PATH}/auth/register?plan=pro_learner`}
+                    href={`${frontendAppBaseUrl}/auth/register?plan=pro_learner`}
                     className="mt-6 w-full bg-secondary text-white hover:bg-secondary-dark font-bold py-2 px-6 rounded-lg transition cursor-pointer block text-center"
                   >
                     Get Started
@@ -113,7 +112,7 @@ const Pricing = () => {
                     <li className="text-accent-dark">⚠ Contains advertisements</li>
                   </ul>
                   <a
-                    href={`${FRONTEND_APP_PATH}/auth/register?plan=basic_educator`}
+                    href={`${frontendAppBaseUrl}/auth/register?plan=basic_educator`}
                     className="mt-6 w-full bg-primary text-secondary font-bold py-2 px-6 rounded-lg hover:bg-secondary hover:text-white transition cursor-pointer block text-center"
                   >
                     Get Started
@@ -144,7 +143,7 @@ const Pricing = () => {
                     <li>✔ Priority support</li>
                   </ul>
                   <a
-                    href={`${FRONTEND_APP_PATH}/auth/register?plan=pro_educator`}
+                    href={`${frontendAppBaseUrl}/auth/register?plan=pro_educator`}
                     className="mt-6 w-full bg-gradient-to-r from-accent to-accent-dark text-white hover:from-accent-dark hover:to-accent-darker font-bold py-2 px-6 rounded-lg transition cursor-pointer block text-center"
                   >
                     Get Started

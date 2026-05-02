@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 
@@ -23,6 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satisfy.variable} antialiased`}>
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5294095144089370"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
         {children}
         <ToastContainer />
       </body>
