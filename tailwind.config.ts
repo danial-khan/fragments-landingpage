@@ -5,11 +5,34 @@ export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx,css}",
   ],
   theme: {
     extend: {
-      scrollBehavior: ['smooth'],
+      fontFamily: {
+        sans: [
+          "var(--font-main)",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
+      },
+      scrollBehavior: ["smooth"],
+      keyframes: {
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        "fade-up": "fadeUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) both",
+        "fade-up-slow": "fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both",
+        "fade-in": "fadeIn 0.6s ease-out both",
+      },
       colors: {
         background: "#ffffff",
         foreground: "#171717",

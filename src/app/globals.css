@@ -8,46 +8,111 @@
   --foreground: #171717;
   --primary: #eff6ff;
   --secondary: #2563eb;
-  
+
   /* Secondary Variations */
   --secondary-dark: #1d4ed8;
   --secondary-medium: #3b82f6;
-  
+
   /* Background Variations */
   --background-alt: #f0f9ff;
   --background-light: #e0f2fe;
   --background-pale: #dbeafe;
-  
+
   /* Accent Colors */
   --accent-orange: #fb923c;
   --accent-orange-dark: #f97316;
   --accent-orange-darker: #ea580c;
   --accent-orange-light: #fdba74;
   --primary-hover: #dbeafe;
-  
+
   /* Border Colors */
   --border-light: #bfdbfe;
   --border-medium: #3b82f6;
   --border-pale: #e5e7eb;
   --border-yellow: #fdba74;
-  
+
   /* Text Colors */
   --text-muted: #64748b;
   --text-dark: #1e293b;
-  
+
   /* State Colors */
   --error: #ef4444;
   --success: #10b981;
 }
 
-/* Font family */
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family:  Arial, Helvetica, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Use configured font for all elements */
-h1, h2, h3, h4, h5, h6, button {
-  font-family:  Arial, Helvetica, sans-serif;
+@layer base {
+  body {
+    @apply bg-background font-sans text-[15px] leading-normal text-textDark antialiased sm:text-[0.9375rem];
+  }
 }
+
+::selection {
+  background-color: rgb(204 251 241 / 0.9);
+  color: rgb(15 23 42);
+}
+
+/* Fragments design system — Tailwind @apply utilities; keep tailwind.config content in sync for src/app CSS. */
+@layer components {
+  .frag-container {
+    @apply mx-auto w-full max-w-7xl px-8 lg:px-16;
+  }
+
+  /* Section labels — matches How it works scale */
+  .frag-eyebrow {
+    @apply text-[9px] font-bold uppercase tracking-[0.2em] text-highlight-dark sm:text-[10px];
+  }
+
+  .frag-title {
+    @apply text-lg font-bold tracking-tight text-secondary sm:text-xl;
+  }
+
+  .frag-lead {
+    @apply text-xs font-medium leading-relaxed text-textMuted sm:text-sm;
+  }
+
+  /* Dark hero bands (blog, about, contact, etc.) */
+  .frag-hero-eyebrow {
+    @apply text-[9px] font-bold uppercase tracking-[0.2em] text-highlight-light sm:text-[10px];
+  }
+
+  .frag-hero-h1 {
+    @apply text-2xl font-bold tracking-tight text-white sm:text-3xl;
+  }
+
+  .frag-hero-lead {
+    @apply mt-2 max-w-md text-sm font-medium leading-snug text-slate-300/95 sm:text-[0.9375rem];
+  }
+
+  .frag-card {
+    @apply rounded-xl border border-slate-200/85 bg-white shadow-sm ring-1 ring-slate-100/90;
+  }
+
+  .frag-card-interactive {
+    @apply rounded-xl border border-slate-200/85 bg-white shadow-sm ring-1 ring-slate-100/90 transition duration-200 ease-out;
+  }
+
+  .frag-card-interactive:hover {
+    @apply -translate-y-0.5 border-highlight/30 shadow-md;
+  }
+
+  .frag-input {
+    @apply w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm text-textDark placeholder:text-textMuted/80 focus:border-highlight focus:outline-none focus:ring-2 focus:ring-highlight/25 sm:px-4 sm:py-3;
+  }
+
+  .frag-btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-accent px-4 py-2.5 text-center text-xs font-bold text-white shadow-sm shadow-orange-500/15 transition hover:bg-accent-dark sm:text-sm;
+  }
+
+  .frag-btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg border-2 border-highlight bg-white px-4 py-2.5 text-center text-xs font-semibold text-highlight transition hover:bg-highlight hover:text-white sm:text-sm;
+  }
+
+  .frag-btn-navy {
+    @apply inline-flex items-center justify-center rounded-lg bg-secondary px-4 py-2.5 text-center text-xs font-bold text-white shadow-sm transition hover:bg-secondary-dark sm:text-sm;
+  }
+}
+

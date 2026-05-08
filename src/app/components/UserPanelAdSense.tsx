@@ -13,8 +13,8 @@ export default function UserPanelAdSense() {
   if (!slot) return null;
 
   return (
-    <div className="rounded-xl border border-border-pale bg-white p-3 shadow-sm">
-      <p className="mb-2 text-center text-[10px] font-semibold uppercase tracking-wider text-textMuted">
+    <div className="frag-card p-3 shadow-sm">
+      <p className="mb-2 text-center text-[9px] font-bold uppercase tracking-[0.18em] text-textMuted sm:text-[10px]">
         Advertisement
       </p>
       <AdSenseDisplay
