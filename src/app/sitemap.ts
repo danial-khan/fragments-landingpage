@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { BLOG_POSTS } from "./(marketing)/blog/_data";
 import { canonicalUrl, getSiteUrl } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 const STATIC_PATHS = [
   "/",
   "/about/",
