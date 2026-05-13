@@ -4,7 +4,7 @@ export const DEFAULT_TITLE =
   "Fragments | Academic discussions that reward great teaching";
 
 export const DEFAULT_DESCRIPTION =
-  "Built for serious learners: guided fragment trails, AI plus human moderation, and recognition for educators who raise the bar on class discussion.";
+  "Fragments is the academic discussion platform for classrooms and cohorts: one fragment trail per conversation, AI plus human review, learner rewards visible in the thread, and recognition for educators who lead great discussions.";
 
 export const DEFAULT_KEYWORDS = [
   "Fragments",
@@ -15,6 +15,8 @@ export const DEFAULT_KEYWORDS = [
   "higher education",
   "scholarly discourse",
   "educator recognition",
+  "student engagement",
+  "learning rewards",
   "moderation",
   "online learning",
 ];

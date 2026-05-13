@@ -17,9 +17,9 @@ import { scrollToSection } from "../../utils/navigation";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
 
 const heroBullets = [
-  "Fragment trails keep rigor visible in one readable thread—not a scattered feed.",
-  "Two-step review (AI screen, then trained humans) before posts reach the class.",
-  "Educators who consistently raise the level of the room get recognized for it.",
+  "What it is: a discussion platform where each cohort follows one fragment trail—not a scattered social feed.",
+  "What you get: AI screening plus human review before posts go wide to the class.",
+  "Who wins: learners earn visible participation; educators who elevate discussion get recognized.",
 ];
 
 const chips = [
@@ -28,12 +28,12 @@ const chips = [
     sub: "Browse public trails",
   },
   {
-    title: "Classrooms & cohorts",
-    sub: "K–12 through higher ed",
-  },
-  {
     title: "AI + human review",
     sub: "Every post screened",
+  },
+  {
+    title: "Challenges & topics",
+    sub: "Themed trails & invites",
   },
 ];
 
@@ -189,22 +189,25 @@ export default function Hero() {
           {/* Left: 7 cols on large */}
           <div className="col-span-12 flex flex-col text-center lg:col-span-7 lg:pr-2 lg:text-left">
             <p className="mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full border border-highlight/25 bg-white/80 px-3 py-1 text-[9px] font-bold uppercase tracking-[0.2em] text-highlight-dark shadow-sm sm:text-[10px] lg:self-start">
-              Learn, Educate, Discuss, Debate
+              Academic discussion for classrooms & cohorts
             </p>
 
             <h1 className="text-balance text-2xl font-bold tracking-tight text-secondary sm:text-3xl lg:text-[2rem] lg:leading-tight">
-              Where Education Truly{" "}
-              <span className="text-accent">Pays Off</span>
+              One <span className="text-highlight-dark">scholarly trail</span> per
+              class—<span className="text-accent">moderated</span>, measurable, and
+              fair to educators who lead
             </h1>
 
             <p className="mx-auto mt-3 max-w-[52ch] text-sm font-medium leading-snug text-textDark sm:text-[0.9375rem] lg:mx-0">
-              The discussion platform where scholarly trails replace noisy feeds,
-              and educators who raise the bar get recognized.
+              <strong className="font-bold text-secondary">Fragments</strong> replaces
+              noisy feeds with ordered fragment trails, two-step review (AI then
+              humans), and clear credit for learners and educators.
             </p>
 
             <p className="mx-auto mt-2 max-w-[52ch] text-xs font-medium leading-relaxed text-textMuted sm:text-sm lg:mx-0">
-              Growth shows up when the whole class can follow one thread, with
-              room for evidence and real debate.
+              If you teach or run a program, you get a surface that reads like serious
+              coursework—sources in line, real debate, and a story you can defend to
+              families and admins.
             </p>
 
             <ul className="mx-auto mt-3 max-w-[52ch] space-y-2 text-left text-xs font-medium leading-snug text-textDark sm:text-sm lg:mx-0">
@@ -274,6 +277,36 @@ export default function Hero() {
               >
                 Learn More
               </button>
+            </div>
+
+            <div className="mx-auto mt-2 text-center text-xs font-medium text-textMuted lg:mx-0 lg:text-left">
+              <button
+                type="button"
+                onClick={() => scrollToSection("why-join", router)}
+                className="font-semibold text-highlight-dark underline decoration-highlight/40 underline-offset-2 transition hover:text-secondary"
+              >
+                Why join Fragments
+              </button>
+              <span className="text-textMuted"> · </span>
+              <button
+                type="button"
+                onClick={() => scrollToSection("engagement", router)}
+                className="font-semibold text-highlight-dark underline decoration-highlight/40 underline-offset-2 transition hover:text-secondary"
+              >
+                Engagement & growth
+              </button>
+              {process.env.NEXT_PUBLIC_HOMEPAGE_DEMO_VIDEO_URL ? (
+                <>
+                  <span className="text-textMuted"> · </span>
+                  <button
+                    type="button"
+                    onClick={() => scrollToSection("demo-video", router)}
+                    className="font-semibold text-highlight-dark underline decoration-highlight/40 underline-offset-2 transition hover:text-secondary"
+                  >
+                    Watch demo
+                  </button>
+                </>
+              ) : null}
             </div>
 
             <p className="mx-auto mt-3 text-center text-xs font-medium text-textMuted lg:mx-0 lg:text-left">

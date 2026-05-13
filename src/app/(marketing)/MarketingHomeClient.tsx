@@ -5,6 +5,9 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import AdSenseDisplay from "../components/AdSenseDisplay";
 import Hero from "../components/landing/Hero";
 import TrustStrip from "../components/landing/TrustStrip";
+import WhyJoinSection from "../components/landing/WhyJoinSection";
+import EngagementSection from "../components/landing/EngagementSection";
+import DemoVideoSection from "../components/landing/DemoVideoSection";
 import WorkflowSection from "../components/landing/WorkflowSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
 import ComparisonSection from "../components/landing/ComparisonSection";
@@ -29,6 +32,8 @@ export default function MarketingHomeClient() {
     <>
       <Hero />
       <TrustStrip />
+      <WhyJoinSection />
+      <EngagementSection />
 
       {process.env.NEXT_PUBLIC_ADSENSE_SLOT_LANDING ? (
         <section
@@ -44,6 +49,7 @@ export default function MarketingHomeClient() {
         </section>
       ) : null}
 
+      <DemoVideoSection />
       <WorkflowSection />
       <FeaturesSection />
       <ComparisonSection />

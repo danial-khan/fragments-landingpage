@@ -1,0 +1,32 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/layout",{
+
+/***/ "(app-pages-browser)/./src/app/globals.css":
+/*!*****************************!*\
+  !*** ./src/app/globals.css ***!
+  \*****************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval(__webpack_require__.ts("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"c83df1f67a92\");\nif (true) { module.hot.accept() }\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvZ2xvYmFscy5jc3MiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLGNBQWM7QUFDN0IsSUFBSSxJQUFVLElBQUksaUJBQWlCIiwic291cmNlcyI6WyIvVXNlcnMvemVlc2hhbmh1cm1hdC9EZXNrdG9wL215LXdvcmsvRnJvbnRlbmQvZnJhZ21lbnRzLWxhbmRpbmdwYWdlL3NyYy9hcHAvZ2xvYmFscy5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgXCJjODNkZjFmNjdhOTJcIlxuaWYgKG1vZHVsZS5ob3QpIHsgbW9kdWxlLmhvdC5hY2NlcHQoKSB9XG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/globals.css\n"));
+
+/***/ }),
+
+/***/ "(app-pages-browser)/./node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Plus_Jakarta_Sans\",\"arguments\":[{\"subsets\":[\"latin\"],\"display\":\"swap\",\"adjustFontFallback\":true,\"variable\":\"--font-main\",\"weight\":[\"400\",\"500\",\"600\",\"700\",\"800\"]}],\"variableName\":\"fontSans\"}":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Plus_Jakarta_Sans","arguments":[{"subsets":["latin"],"display":"swap","adjustFontFallback":true,"variable":"--font-main","weight":["400","500","600","700","800"]}],"variableName":"fontSans"} ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"style\":{\"fontFamily\":\"'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback'\",\"fontStyle\":\"normal\"},\"className\":\"__className_a11773\",\"variable\":\"__variable_a11773\"};\n    if(true) {\n      // 1778639079629\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL25vZGVfbW9kdWxlcy9uZXh0L2ZvbnQvZ29vZ2xlL3RhcmdldC5jc3M/e1wicGF0aFwiOlwic3JjL2FwcC9sYXlvdXQudHN4XCIsXCJpbXBvcnRcIjpcIlBsdXNfSmFrYXJ0YV9TYW5zXCIsXCJhcmd1bWVudHNcIjpbe1wic3Vic2V0c1wiOltcImxhdGluXCJdLFwiZGlzcGxheVwiOlwic3dhcFwiLFwiYWRqdXN0Rm9udEZhbGxiYWNrXCI6dHJ1ZSxcInZhcmlhYmxlXCI6XCItLWZvbnQtbWFpblwiLFwid2VpZ2h0XCI6W1wiNDAwXCIsXCI1MDBcIixcIjYwMFwiLFwiNzAwXCIsXCI4MDBcIl19XSxcInZhcmlhYmxlTmFtZVwiOlwiZm9udFNhbnNcIn0iLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxrQkFBa0IsU0FBUyxzRkFBc0Y7QUFDakgsT0FBTyxJQUFVO0FBQ2pCO0FBQ0Esc0JBQXNCLG1CQUFPLENBQUMsd01BQXlKLGNBQWMsc0RBQXNEO0FBQzNQLE1BQU0sVUFBVTtBQUNoQjtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIi9Vc2Vycy96ZWVzaGFuaHVybWF0L0Rlc2t0b3AvbXktd29yay9Gcm9udGVuZC9mcmFnbWVudHMtbGFuZGluZ3BhZ2Uvbm9kZV9tb2R1bGVzL25leHQvZm9udC9nb29nbGUvdGFyZ2V0LmNzcz97XCJwYXRoXCI6XCJzcmMvYXBwL2xheW91dC50c3hcIixcImltcG9ydFwiOlwiUGx1c19KYWthcnRhX1NhbnNcIixcImFyZ3VtZW50c1wiOlt7XCJzdWJzZXRzXCI6W1wibGF0aW5cIl0sXCJkaXNwbGF5XCI6XCJzd2FwXCIsXCJhZGp1c3RGb250RmFsbGJhY2tcIjp0cnVlLFwidmFyaWFibGVcIjpcIi0tZm9udC1tYWluXCIsXCJ3ZWlnaHRcIjpbXCI0MDBcIixcIjUwMFwiLFwiNjAwXCIsXCI3MDBcIixcIjgwMFwiXX1dLFwidmFyaWFibGVOYW1lXCI6XCJmb250U2Fuc1wifSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbm1vZHVsZS5leHBvcnRzID0ge1wic3R5bGVcIjp7XCJmb250RmFtaWx5XCI6XCInUGx1cyBKYWthcnRhIFNhbnMnLCAnUGx1cyBKYWthcnRhIFNhbnMgRmFsbGJhY2snXCIsXCJmb250U3R5bGVcIjpcIm5vcm1hbFwifSxcImNsYXNzTmFtZVwiOlwiX19jbGFzc05hbWVfYTExNzczXCIsXCJ2YXJpYWJsZVwiOlwiX192YXJpYWJsZV9hMTE3NzNcIn07XG4gICAgaWYobW9kdWxlLmhvdCkge1xuICAgICAgLy8gMTc3ODYzOTA3OTYyOVxuICAgICAgdmFyIGNzc1JlbG9hZCA9IHJlcXVpcmUoXCIvVXNlcnMvemVlc2hhbmh1cm1hdC9EZXNrdG9wL215LXdvcmsvRnJvbnRlbmQvZnJhZ21lbnRzLWxhbmRpbmdwYWdlL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY29tcGlsZWQvbWluaS1jc3MtZXh0cmFjdC1wbHVnaW4vaG1yL2hvdE1vZHVsZVJlcGxhY2VtZW50LmpzXCIpKG1vZHVsZS5pZCwge1wicHVibGljUGF0aFwiOlwiL19uZXh0L1wiLFwiZXNNb2R1bGVcIjpmYWxzZSxcImxvY2Fsc1wiOnRydWV9KTtcbiAgICAgIG1vZHVsZS5ob3QuZGlzcG9zZShjc3NSZWxvYWQpO1xuICAgICAgXG4gICAgfVxuICAiXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbMF0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(app-pages-browser)/./node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Plus_Jakarta_Sans\",\"arguments\":[{\"subsets\":[\"latin\"],\"display\":\"swap\",\"adjustFontFallback\":true,\"variable\":\"--font-main\",\"weight\":[\"400\",\"500\",\"600\",\"700\",\"800\"]}],\"variableName\":\"fontSans\"}\n"));
+
+/***/ })
+
+});
